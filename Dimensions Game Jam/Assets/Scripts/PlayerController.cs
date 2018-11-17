@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 [RequireComponent(typeof(CapsuleCollider2D))]
 public class PlayerController : MonoBehaviour {
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour {
     public int lives;
     public float invincibleWaitTime;
     float nextInvincibleTime;
+    public AudioSource damageNoise;
 
     CapsuleCollider2D collider;
     RaycastOrigins raycastOrigins;
@@ -115,12 +117,14 @@ public class PlayerController : MonoBehaviour {
                     lives--;
                     nextInvincibleTime = Time.time + invincibleWaitTime;
                     Object.Destroy(hit);
+                    damageNoise.Play();
                 }
                 else if (hit.tag == "RedEnemy" && this.tag == "Blue")
                 {
                     lives--;
                     nextInvincibleTime = Time.time + invincibleWaitTime;
                     Object.Destroy(hit);
+                    damageNoise.Play();
                 }
             }
             

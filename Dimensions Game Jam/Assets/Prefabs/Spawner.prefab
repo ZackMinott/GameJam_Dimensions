@@ -52,7 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ee99fea5673de844866cb1c667267b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnWaitTime: 0.5
+  asteroidSpawnWaitTime: 0.5
+  coinSpawnWaitTime: 1
   redAsteroid1: {fileID: 1094547616119160, guid: 9dcc21fe79d943547a2bb6c2c6d8d266,
     type: 2}
   redAsteroid2: {fileID: 1094547616119160, guid: 109ff19c9f0fd784ab13a4905de1c31b,
@@ -61,6 +62,7 @@ MonoBehaviour:
     type: 2}
   blueAsteroid2: {fileID: 1575514912836456, guid: 1ee550a9a882345449e3ff3c1aca245d,
     type: 2}
+  coin: {fileID: 1740381231019874, guid: 90e04fef70a7e6b4a9e0a04388fc6612, type: 2}
   background: {fileID: 0}
 --- !u!212 &212852113288118436
 SpriteRenderer:
