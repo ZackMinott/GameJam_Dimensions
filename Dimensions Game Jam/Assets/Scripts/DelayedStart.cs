@@ -13,6 +13,7 @@ public class DelayedStart : MonoBehaviour
     public GameObject BG;
     public GameObject PlayerOne;
     public GameObject PlayerTwo;
+    public GameObject ScoreSystem;
     bool goPlay = false;
 
 
@@ -65,6 +66,7 @@ public class DelayedStart : MonoBehaviour
         BG.GetComponent<EndlessBackdropScript>().enabled = true;
         PlayerOne.GetComponent<PlayerController>().enabled = true;
         PlayerTwo.GetComponent<PlayerController>().enabled = true;
+        ScoreSystem.GetComponent<EndlessScore>().enabled = true;
     }
 
 }

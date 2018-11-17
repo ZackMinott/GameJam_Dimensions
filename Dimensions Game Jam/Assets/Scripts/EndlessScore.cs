@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class EndlessScore : MonoBehaviour {
 
-    public static int score;
+    public static int score ;
     public Text scoreText;
     public GameObject player;
     // Use this for initialization
@@ -22,7 +22,7 @@ public class EndlessScore : MonoBehaviour {
 
     void SetScoreText()
     {
-        score = ((int)Time.time) + player.GetComponent<CoinSystem>().getCoinScore();
+        score = (((int)Time.timeSinceLevelLoad) + player.GetComponent<CoinSystem>().getCoinScore()) -3;
         scoreText.text = "Score: " + score;
     }
 

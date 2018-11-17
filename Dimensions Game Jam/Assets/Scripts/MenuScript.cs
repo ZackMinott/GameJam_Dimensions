@@ -14,10 +14,21 @@ public class MenuScript : MonoBehaviour
     public void PlayEndlessGame()
     {
         SceneManager.LoadScene("EndlessScene");
+
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void RetryGame()
+    {
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        CoinSystem.coins = 0;
+        GameObject.Find("Alien1_PH").GetComponent<CoinSystem>().SetCountText();
+        EndlessScore.score = 0;
+    
     }
 }

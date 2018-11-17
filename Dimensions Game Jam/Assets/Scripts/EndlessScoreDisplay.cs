@@ -11,6 +11,7 @@ public class EndlessScoreDisplay : MonoBehaviour {
     public Text coinText;
     public Text finalScoreText;
     public GameObject backButton;
+    public GameObject retryButton;
     int score;
 
 	// Use this for initialization
@@ -29,6 +30,7 @@ public class EndlessScoreDisplay : MonoBehaviour {
             scoreText.enabled = false;
             coinText.enabled = false;
             backButton.SetActive(true);
+            retryButton.SetActive(true);
             player1.SetActive(false);
             player2.SetActive(false);
             scoreText.GetComponent<EndlessScore>().enabled = false;
