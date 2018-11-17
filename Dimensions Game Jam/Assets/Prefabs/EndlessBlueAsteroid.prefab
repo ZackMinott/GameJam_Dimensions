@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212390352297998162}
   - component: {fileID: 58588696135815108}
   m_Layer: 8
-  m_Name: BlueAsteroid
+  m_Name: EndlessBlueAsteroid
   m_TagString: BlueEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
