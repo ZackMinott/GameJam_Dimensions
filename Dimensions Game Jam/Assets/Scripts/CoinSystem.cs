@@ -17,18 +17,20 @@ public class CoinSystem : MonoBehaviour {
  
     void OnTriggerEnter2D(Collider2D col)
     {
-        Destroy(col.gameObject);
+        
         if (col.gameObject.tag == "Coin")
         {
             coins++;
-            countText.text = "Coins:" + coins;
+            //countText.text = "Coins:" + coins;
             SetCountText();
         }
-        
+
+        Destroy(col.gameObject);
+
     }
 
     void SetCountText()
     {
-        countText.text = "Coins:" + coins;
+        countText.text = "Coins: " + coins;
     }
 }
