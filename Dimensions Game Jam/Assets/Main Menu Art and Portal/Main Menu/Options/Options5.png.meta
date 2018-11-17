@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 0573ce6dcab0b704b8689c15eb9601da
+guid: 2bbba42eb0444a348b6a3390838a86ae
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Endless2_0
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -41,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,44 +69,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Endless2_0
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 731
-        width: 2403
-        height: 2800
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33e354d0003ffe745a1ef1035a976760
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5cfbda2117e14844680fc77de9214449
+    spriteID: 74bfe576f41aa1e4ab35a48cbb1f6ba2
     vertices: []
     indices: 
     edges: []
