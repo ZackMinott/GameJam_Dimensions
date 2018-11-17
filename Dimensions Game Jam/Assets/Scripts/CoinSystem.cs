@@ -7,7 +7,7 @@ using UnityEngine.Audio;
 public class CoinSystem : MonoBehaviour {
    
     public static int coins = 0;
-    static int spentCoins = 0;
+    public static int spentCoins = 0;
     public Text countText;
     public int coinsNeeded;
     public AudioSource noise;
