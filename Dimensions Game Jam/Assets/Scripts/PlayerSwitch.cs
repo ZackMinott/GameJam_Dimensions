@@ -41,7 +41,7 @@ public class PlayerSwitch : MonoBehaviour {
             noise.Play();
         }
 	}
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnCollissionEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "LimitingWall")
         {
