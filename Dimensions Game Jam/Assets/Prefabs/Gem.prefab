@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4652846466765040}
   - component: {fileID: 212002173297586556}
   - component: {fileID: 60121833569141162}
+  - component: {fileID: 114786106440724008}
   m_Layer: 0
   m_Name: Gem
   m_TagString: Coin
@@ -127,6 +128,17 @@ PolygonCollider2D:
       - {x: -2.08, y: -2.46}
       - {x: -1.2099999, y: -2.46}
       - {x: -1.1999999, y: -2.47}
+--- !u!114 &114786106440724008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1740381231019874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 985d4604ef266ce4d8ee906600040705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212002173297586556
 SpriteRenderer:
   m_ObjectHideFlags: 1
