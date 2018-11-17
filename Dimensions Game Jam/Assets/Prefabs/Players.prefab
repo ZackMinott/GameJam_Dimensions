@@ -309,7 +309,7 @@ MonoBehaviour:
   - {fileID: 0}
   fullPip: {fileID: 21300000, guid: 180ccfd66aee83c47a16a90a5626dc33, type: 3}
   emptyPip: {fileID: 21300000, guid: 3f60a02560fd34749bf7700710ff9afb, type: 3}
-  currentHearts: 3
+  currentHearts: 5
 --- !u!114 &114192041446361626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -360,7 +360,7 @@ MonoBehaviour:
   - {fileID: 0}
   fullPip: {fileID: 21300000, guid: 602ad869022c7c34185ac291df43a41c, type: 3}
   emptyPip: {fileID: 21300000, guid: 3f60a02560fd34749bf7700710ff9afb, type: 3}
-  currentHearts: 3
+  currentHearts: 5
 --- !u!114 &114792207139406090
 MonoBehaviour:
   m_ObjectHideFlags: 1
