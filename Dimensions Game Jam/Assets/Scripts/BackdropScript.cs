@@ -15,7 +15,7 @@ public class BackdropScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        if (transform.position.y <= (transform.localScale.y - 10) / 10 * -5)
+        if (transform.position.y <= (transform.localScale.y - 10) / 10 * -5 + (speed/30))
         {
             transform.position = new Vector3(transform.position.x, (transform.localScale.y - 10) / 10 * 5, transform.position.z);
         }
