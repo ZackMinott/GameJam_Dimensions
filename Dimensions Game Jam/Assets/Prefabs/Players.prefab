@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114192041446361626}
   m_Layer: 0
   m_Name: Alien1_PH
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 114037043842652108}
   m_Layer: 0
   m_Name: Alien2_PH
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,8 +157,8 @@ MonoBehaviour:
     m_Bits: 256
   horizontalRayCount: 4
   verticalRayCount: 4
-  lives: 0
-  invincibleWaitTime: 0
+  lives: 3
+  invincibleWaitTime: 1
 --- !u!114 &114149470827254782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -219,8 +219,8 @@ MonoBehaviour:
     m_Bits: 256
   horizontalRayCount: 4
   verticalRayCount: 4
-  lives: 0
-  invincibleWaitTime: 0
+  lives: 3
+  invincibleWaitTime: 1
 --- !u!114 &114792207139406090
 MonoBehaviour:
   m_ObjectHideFlags: 1
