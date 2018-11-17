@@ -109,15 +109,16 @@ public class PlayerController : MonoBehaviour {
                 {
                     lives--;
                     nextInvincibleTime = Time.time + invincibleWaitTime;
+                    Object.Destroy(hit);
                 }
                 else if (hit.tag == "RedEnemy" && this.tag == "Blue")
                 {
                     lives--;
                     nextInvincibleTime = Time.time + invincibleWaitTime;
-
+                    Object.Destroy(hit);
                 }
             }
-            Object.Destroy(hit);
+            
         }
     }
 
