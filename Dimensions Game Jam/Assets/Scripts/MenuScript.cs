@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
 
-    public void PlayGame()
+    public void PlayNormalGame()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("fixedScene");
+    }
+
+    public void PlayEndlessGame()
+    {
+        SceneManager.LoadScene("EndlessScene");
     }
 
     public void QuitGame()

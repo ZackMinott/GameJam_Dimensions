@@ -7,13 +7,18 @@ public class DelayedStart : MonoBehaviour
     //this will be the one that will put onhold
     public GameObject PauseThis;
     //put numbers / counters here
-    public GameObject CountDown;
+    public GameObject Three;
+    public GameObject Two;
+    public GameObject One;
+    public GameObject BG;
+    bool goPlay = false;
 
 
     // Use this for initialization
     void Start()
     {
         StartCoroutine("StartDelay");
+      
 
     }
 
@@ -34,12 +39,31 @@ public class DelayedStart : MonoBehaviour
     IEnumerator StartDelay()
     {
 
-        yield return new WaitForSeconds(3);
-        Debug.Log("waited");
+        yield return new WaitForSeconds(1);
+        Three.SetActive(false);
+        Two.SetActive(true);
+        StartCoroutine("OneCT");
+        
         //CountDown.SetActive(false);
         //PauseThis.SetActive(true);
 
     }
+    IEnumerator OneCT()
+    {
+        yield return new WaitForSeconds(1);
+        Two.SetActive(false);
+        One.SetActive(true);
+        StartCoroutine("ReadyPlay");
+    }
+    IEnumerator ReadyPlay()
+    {
+        yield return new WaitForSeconds(1);
+        One.SetActive(false);
+        BG.GetComponent<BackdropScript>().enabled = true;
+    }
+
+}
+    
     /* public void PlayIdle()
      {
          FFFormBox.SetActive(true);
@@ -56,5 +80,3 @@ public class DelayedStart : MonoBehaviour
          PlayerController.GetComponent<Player1>().enabled = true;
          goPlayEnd = true;
      }*/
-
-}
