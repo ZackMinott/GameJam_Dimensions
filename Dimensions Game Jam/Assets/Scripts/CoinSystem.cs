@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class CoinSystem : MonoBehaviour {
    
     public static int coins = 0;
     public static int spentCoins = 0;
+    public int coinsNeeded = 100;
     public Text countText;
+    public AudioSource collectNoise;
+    public AudioSource healNoise;
 
     void Start()
     {
@@ -24,13 +28,14 @@ public class CoinSystem : MonoBehaviour {
             coins++;
             SetCountText();
         }
-        if (coins >= 100)
+        if (coins >= coinsNeeded)
         {
             transform.gameObject.GetComponent<PlayerController>().lives++;
-            coins -= 100;
-            spentCoins += 100;
-            Debug.Log(transform.gameObject.name + " gained life");
+            coins -= coinsNeeded;
+            spentCoins += coinsNeeded;
+            healNoise.Play();
         }
+        collectNoise.Play();
         Destroy(col.gameObject);
 
     }

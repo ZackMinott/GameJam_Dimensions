@@ -676,6 +676,26 @@ Prefab:
       propertyPath: coinsNeeded
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 114827406739619644, guid: c8884d5b0d0c14f4aaae12a99ebbd47f,
+        type: 2}
+      propertyPath: collectNoise
+      value: 
+      objectReference: {fileID: 1679800091}
+    - target: {fileID: 114827406739619644, guid: c8884d5b0d0c14f4aaae12a99ebbd47f,
+        type: 2}
+      propertyPath: healNoise
+      value: 
+      objectReference: {fileID: 585542576}
+    - target: {fileID: 114383374428673738, guid: c8884d5b0d0c14f4aaae12a99ebbd47f,
+        type: 2}
+      propertyPath: collectNoise
+      value: 
+      objectReference: {fileID: 1679800091}
+    - target: {fileID: 114383374428673738, guid: c8884d5b0d0c14f4aaae12a99ebbd47f,
+        type: 2}
+      propertyPath: healNoise
+      value: 
+      objectReference: {fileID: 585542576}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8884d5b0d0c14f4aaae12a99ebbd47f, type: 2}
   m_IsPrefabAsset: 0

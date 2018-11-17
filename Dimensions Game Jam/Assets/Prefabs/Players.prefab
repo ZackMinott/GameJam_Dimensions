@@ -340,7 +340,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 095baada500d0054792f800bca93c534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinsNeeded: 100
   countText: {fileID: 0}
+  collectNoise: {fileID: 0}
+  healNoise: {fileID: 0}
 --- !u!114 &114656212681549416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -384,7 +387,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 095baada500d0054792f800bca93c534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinsNeeded: 100
   countText: {fileID: 0}
+  collectNoise: {fileID: 0}
+  healNoise: {fileID: 0}
 --- !u!114 &114849543074466518
 MonoBehaviour:
   m_ObjectHideFlags: 1
