@@ -496,6 +496,16 @@ Prefab:
       propertyPath: countText
       value: 
       objectReference: {fileID: 917233442}
+    - target: {fileID: 114192041446361626, guid: c8884d5b0d0c14f4aaae12a99ebbd47f,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114037043842652108, guid: c8884d5b0d0c14f4aaae12a99ebbd47f,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8884d5b0d0c14f4aaae12a99ebbd47f, type: 2}
   m_IsPrefabAsset: 0
@@ -1510,6 +1520,8 @@ MonoBehaviour:
   Two: {fileID: 1561827767}
   One: {fileID: 1202555367}
   BG: {fileID: 1383319164}
+  PlayerOne: {fileID: 748396065}
+  PlayerTwo: {fileID: 1888736788}
 --- !u!4 &883369660
 Transform:
   m_ObjectHideFlags: 0
@@ -2099,7 +2111,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1383319164}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03dfc10f6a159c24e8494494a412135d, type: 3}
   m_Name: 

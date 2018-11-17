@@ -11,6 +11,8 @@ public class DelayedStart : MonoBehaviour
     public GameObject Two;
     public GameObject One;
     public GameObject BG;
+    public GameObject PlayerOne;
+    public GameObject PlayerTwo;
     bool goPlay = false;
 
 
@@ -59,14 +61,10 @@ public class DelayedStart : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         One.SetActive(false);
-        if (BG.GetComponent<BackdropScript>() != null)
-        {
-            BG.GetComponent<BackdropScript>().enabled = true;
-        }
-        else
-        {
-            BG.GetComponent<EndlessBackdropScript>().enabled = true;
-        }
+     
+        BG.GetComponent<EndlessBackdropScript>().enabled = true;
+        PlayerOne.GetComponent<PlayerController>().enabled = true;
+        PlayerTwo.GetComponent<PlayerController>().enabled = true;
     }
 
 }
