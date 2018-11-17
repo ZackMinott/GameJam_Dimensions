@@ -5,7 +5,7 @@ using UnityEngine;
 public class EndlessDifficultyCalculator : MonoBehaviour {
 
     [Range(1,3)]
-    public int difficultyFactor = 1;
+    public float difficultyFactor = DifficultyControl.difficulty;
     float difficultyWaitTime;
     float nextDifficultyStart = 3;
     float currentDifficultyProgress = 0;
@@ -16,6 +16,7 @@ public class EndlessDifficultyCalculator : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
+        difficultyFactor = DifficultyControl.difficulty;
         difficultyWaitTime = 30 / difficultyFactor;
 	}
 	
