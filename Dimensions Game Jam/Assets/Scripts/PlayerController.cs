@@ -28,6 +28,11 @@ public class PlayerController : MonoBehaviour {
         CalculateRaySpacing();
     }
 
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        HitObstacle(collision.gameObject);
+    }
+
     public void Move(Vector3 velocity)
     {
         UpdateRaycastOrigins();
@@ -109,15 +114,16 @@ public class PlayerController : MonoBehaviour {
                 {
                     lives--;
                     nextInvincibleTime = Time.time + invincibleWaitTime;
+                    Object.Destroy(hit);
                 }
                 else if (hit.tag == "RedEnemy" && this.tag == "Blue")
                 {
                     lives--;
                     nextInvincibleTime = Time.time + invincibleWaitTime;
-
+                    Object.Destroy(hit);
                 }
             }
-            Object.Destroy(hit);
+            
         }
     }
 
