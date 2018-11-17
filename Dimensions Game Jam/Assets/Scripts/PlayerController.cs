@@ -14,6 +14,10 @@ public class PlayerController : MonoBehaviour {
     float horizontalRaySpacing;
     float verticalRaySpacing;
 
+    public int lives;
+    public float invincibleWaitTime;
+    float nextInvincibleTime;
+
     CapsuleCollider2D collider;
     RaycastOrigins raycastOrigins;
     public CollisionInfo collisions;
@@ -60,6 +64,20 @@ public class PlayerController : MonoBehaviour {
                 velocity.x = (hit.distance - skinWidth) * directionX;
                 rayLength = hit.distance;
 
+                if (Time.time > nextInvincibleTime)
+                {
+                    if (hit.collider.tag == "BlueEnemy" && this.tag == "Red")
+                    {
+                        lives--;
+                        nextInvincibleTime = Time.time + invincibleWaitTime;
+                    }
+                    else if (hit.collider.tag == "RedEnemy" && this.tag == "Blue")
+                    {
+                        lives--;
+                        nextInvincibleTime = Time.time + invincibleWaitTime;
+                    }
+                }
+
                 collisions.left = directionX == -1;
                 collisions.right = directionX == 1;
             }
@@ -81,6 +99,21 @@ public class PlayerController : MonoBehaviour {
 
             if (hit)
             {
+
+                if (Time.time > nextInvincibleTime)
+                {
+                    if (hit.collider.tag == "BlueEnemy" && this.tag == "Red")
+                    {
+                        lives--;
+                        nextInvincibleTime = Time.time + invincibleWaitTime;
+                    }
+                    else if (hit.collider.tag == "RedEnemy" && this.tag == "Blue")
+                    {
+                        lives--;
+                        nextInvincibleTime = Time.time + invincibleWaitTime;
+                    }
+                }
+
                 velocity.y = (hit.distance - skinWidth) * directionY;
                 rayLength = hit.distance;
 
