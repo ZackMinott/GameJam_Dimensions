@@ -64,19 +64,7 @@ public class PlayerController : MonoBehaviour {
                 velocity.x = (hit.distance - skinWidth) * directionX;
                 rayLength = hit.distance;
 
-                if (Time.time > nextInvincibleTime)
-                {
-                    if (hit.collider.tag == "BlueEnemy" && this.tag == "Red")
-                    {
-                        lives--;
-                        nextInvincibleTime = Time.time + invincibleWaitTime;
-                    }
-                    else if (hit.collider.tag == "RedEnemy" && this.tag == "Blue")
-                    {
-                        lives--;
-                        nextInvincibleTime = Time.time + invincibleWaitTime;
-                    }
-                }
+                HitObstacle(hit.collider.gameObject);
 
                 collisions.left = directionX == -1;
                 collisions.right = directionX == 1;
@@ -100,19 +88,7 @@ public class PlayerController : MonoBehaviour {
             if (hit)
             {
 
-                if (Time.time > nextInvincibleTime)
-                {
-                    if (hit.collider.tag == "BlueEnemy" && this.tag == "Red")
-                    {
-                        lives--;
-                        nextInvincibleTime = Time.time + invincibleWaitTime;
-                    }
-                    else if (hit.collider.tag == "RedEnemy" && this.tag == "Blue")
-                    {
-                        lives--;
-                        nextInvincibleTime = Time.time + invincibleWaitTime;
-                    }
-                }
+                HitObstacle(hit.collider.gameObject);
 
                 velocity.y = (hit.distance - skinWidth) * directionY;
                 rayLength = hit.distance;
@@ -120,6 +96,28 @@ public class PlayerController : MonoBehaviour {
                 collisions.below = directionY == -1;
                 collisions.above = directionY == 1;
             }
+        }
+    }
+
+    void HitObstacle(GameObject hit)
+    {
+        if (hit.tag != "Untagged")
+        {
+            if (Time.time > nextInvincibleTime)
+            {
+                if (hit.tag == "BlueEnemy" && this.tag == "Red")
+                {
+                    lives--;
+                    nextInvincibleTime = Time.time + invincibleWaitTime;
+                }
+                else if (hit.tag == "RedEnemy" && this.tag == "Blue")
+                {
+                    lives--;
+                    nextInvincibleTime = Time.time + invincibleWaitTime;
+
+                }
+            }
+            Object.Destroy(hit);
         }
     }
 
