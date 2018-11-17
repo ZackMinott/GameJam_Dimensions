@@ -21,4 +21,5 @@ public class BackdropScript : MonoBehaviour {
         }
         transform.Translate(new Vector3(0, -1 * speed * Time.deltaTime));
 	}
+
 }

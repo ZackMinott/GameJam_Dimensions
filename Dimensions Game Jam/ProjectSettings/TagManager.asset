@@ -8,6 +8,7 @@ TagManager:
   - Red
   - BlueEnemy
   - Blue
+  - Coin
   layers:
   - Default
   - TransparentFX
@@ -17,11 +18,11 @@ TagManager:
   - UI
   - 
   - 
-  - Obstacles
-  - 
-  - 
-  - 
-  - 
+  - NeutralObstacles
+  - RedPlayer
+  - BluePlayer
+  - RedObstacle
+  - BlueObstacle
   - 
   - 
   - 
