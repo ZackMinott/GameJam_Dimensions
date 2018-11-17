@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4127109235486966}
   - component: {fileID: 212199218095951804}
   - component: {fileID: 58466273527841334}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: RedAsteroid
   m_TagString: RedEnemy
   m_Icon: {fileID: 0}

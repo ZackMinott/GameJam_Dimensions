@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 4901933874000138}
   - component: {fileID: 212390352297998162}
   - component: {fileID: 58588696135815108}
-  m_Layer: 8
+  - component: {fileID: 114353163259988538}
+  m_Layer: 12
   m_Name: EndlessBlueAsteroid
   m_TagString: BlueEnemy
   m_Icon: {fileID: 0}
@@ -50,12 +51,23 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &114353163259988538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1575514912836456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb4951280085d74c89db3c8ed225bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212390352297998162
 SpriteRenderer:
   m_ObjectHideFlags: 1
