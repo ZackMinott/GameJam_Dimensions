@@ -263,7 +263,7 @@ MonoBehaviour:
   imageRenderer: {fileID: 0}
   particlesSystem: {fileID: 198233053975501518}
   PlayOnAwake: 1
-  EmissionRate: 50000
+  EmissionRate: 10000
   UsePixelSourceColor: 1
   borderEmission: 0
   UseEmissionFromColor: 0
@@ -403,7 +403,7 @@ MonoBehaviour:
   imageRenderer: {fileID: 0}
   particlesSystem: {fileID: 198252218900511318}
   PlayOnAwake: 1
-  EmissionRate: 20000
+  EmissionRate: 10000
   UsePixelSourceColor: 1
   borderEmission: 0
   UseEmissionFromColor: 0
@@ -9645,7 +9645,7 @@ SpriteRenderer:
   m_SortingLayerID: -614706965
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5c45c357f9a3f8544a2e8ee13aef6522, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 925f041c4bc6686469a43c7d304f7ead, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9691,7 +9691,7 @@ SpriteRenderer:
   m_SortingLayerID: -614706965
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9ca9251d772af354ca4957003638dce5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9f26858badbdd349a2740d4ebd5f129, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -9,6 +9,9 @@ TagManager:
   - BlueEnemy
   - Blue
   - Coin
+  - portal1
+  - portal2
+  - LimitingWall
   layers:
   - Default
   - TransparentFX

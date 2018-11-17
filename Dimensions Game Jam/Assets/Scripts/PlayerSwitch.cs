@@ -10,8 +10,9 @@ public class PlayerSwitch : MonoBehaviour {
     Animator switching1;
     Animator switching2;
 
-    public AudioSource noise;
 
+    public AudioSource noise;
+    public bool inTheMiddle = false;
 	// Use this for initialization
 	void Start () {
         player1 = GameObject.FindGameObjectWithTag("Red");
@@ -19,17 +20,24 @@ public class PlayerSwitch : MonoBehaviour {
 
         switching1 = player1.GetComponent<Animator>();
         switching2 = player2.GetComponent<Animator>();
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && inTheMiddle == false)
         {
             StartCoroutine("switchAnimation");
             noise.Play();
         }
 	}
-
+    private void OnCollissionEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "LimitingWall")
+        {
+            inTheMiddle = true;
+        }
+    }
     void Switch()
     {
         
@@ -40,8 +48,10 @@ public class PlayerSwitch : MonoBehaviour {
 
     IEnumerator switchAnimation()
     {
+
         switching1.SetBool("isSwitching", true);
         switching2.SetBool("isSwitching", true);
+      
         yield return new WaitForSeconds(.2f);
 
         Switch();
@@ -49,7 +59,7 @@ public class PlayerSwitch : MonoBehaviour {
         yield return new WaitForSeconds(.1f);
         switching1.SetBool("isSwitching", false);
         switching2.SetBool("isSwitching", false);
-
         
+
     }
 }
