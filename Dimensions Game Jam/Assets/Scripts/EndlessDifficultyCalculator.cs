@@ -10,6 +10,7 @@ public class EndlessDifficultyCalculator : MonoBehaviour {
     float nextDifficultyStart = 3;
     float currentDifficultyProgress = 0;
     int difficultyBenchmark = 1;
+    public AudioSource music;
 
 
 	// Use this for initialization
@@ -34,6 +35,7 @@ public class EndlessDifficultyCalculator : MonoBehaviour {
                 difficultyBenchmark++;
             }
         }
+        music.pitch = GetDifficulty() /5 >= 1? GetDifficulty() /5 : 1;
 	}
 
     public float GetDifficulty()
