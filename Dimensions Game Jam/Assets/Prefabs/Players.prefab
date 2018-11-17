@@ -113,13 +113,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1982283760867120}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.014620791, w: 0.9998931}
   m_LocalPosition: {x: 8.4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4163131777921336}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.6750001}
 --- !u!50 &50525094576722338
 Rigidbody2D:
   serializedVersion: 4
@@ -173,8 +173,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1.5}
-  m_Direction: 0
+  m_Size: {x: 1.8930893, y: 0.9072404}
+  m_Direction: 1
 --- !u!70 &70355414135028534
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -187,8 +187,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.28, y: 1.28}
+  m_Offset: {x: -0.036550224, y: 0.0073099136}
+  m_Size: {x: 0.73905647, y: 1.7917025}
   m_Direction: 0
 --- !u!95 &95226237757042762
 Animator:
@@ -263,7 +263,7 @@ MonoBehaviour:
   imageRenderer: {fileID: 0}
   particlesSystem: {fileID: 198233053975501518}
   PlayOnAwake: 1
-  EmissionRate: 5000
+  EmissionRate: 50000
   UsePixelSourceColor: 1
   borderEmission: 0
   UseEmissionFromColor: 0
@@ -272,7 +272,7 @@ MonoBehaviour:
   GreenTolerance: 0.05
   BlueTolerance: 0.05
   useSpritesSharingPool: 0
-  useBetweenFramesPrecision: 0
+  useBetweenFramesPrecision: 1
   CacheSprites: 1
   matchTargetGOPostionData: 0
   matchTargetGOScale: 0
@@ -341,9 +341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 0}
-  coinsNeeded: 0
-  noise: {fileID: 0}
-  noise2: {fileID: 0}
 --- !u!114 &114656212681549416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -388,9 +385,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 0}
-  coinsNeeded: 0
-  noise: {fileID: 0}
-  noise2: {fileID: 0}
 --- !u!114 &114849543074466518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -409,8 +403,8 @@ MonoBehaviour:
   imageRenderer: {fileID: 0}
   particlesSystem: {fileID: 198252218900511318}
   PlayOnAwake: 1
-  EmissionRate: 5000
-  UsePixelSourceColor: 0
+  EmissionRate: 20000
+  UsePixelSourceColor: 1
   borderEmission: 0
   UseEmissionFromColor: 0
   EmitFromColor: {r: 0, g: 0, b: 0, a: 0}
@@ -1000,7 +994,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 5000
+    maxNumParticles: 50000
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -5533,7 +5527,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 5000
+    maxNumParticles: 20000
     size3D: 0
     rotation3D: 0
     gravityModifier:
