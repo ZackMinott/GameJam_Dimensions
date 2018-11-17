@@ -59,7 +59,14 @@ public class DelayedStart : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         One.SetActive(false);
-        BG.GetComponent<BackdropScript>().enabled = true;
+        if (BG.GetComponent<BackdropScript>() != null)
+        {
+            BG.GetComponent<BackdropScript>().enabled = true;
+        }
+        else
+        {
+            BG.GetComponent<EndlessBackdropScript>().enabled = true;
+        }
     }
 
 }

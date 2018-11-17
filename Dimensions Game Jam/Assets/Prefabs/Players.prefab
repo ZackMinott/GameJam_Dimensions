@@ -240,8 +240,8 @@ MonoBehaviour:
     m_Bits: 256
   horizontalRayCount: 4
   verticalRayCount: 4
-  lives: 0
-  invincibleWaitTime: 0
+  lives: 3
+  invincibleWaitTime: 1
 --- !u!114 &114149470827254782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -303,8 +303,8 @@ MonoBehaviour:
     m_Bits: 256
   horizontalRayCount: 4
   verticalRayCount: 4
-  lives: 0
-  invincibleWaitTime: 0
+  lives: 3
+  invincibleWaitTime: 1
 --- !u!114 &114383374428673738
 MonoBehaviour:
   m_ObjectHideFlags: 1

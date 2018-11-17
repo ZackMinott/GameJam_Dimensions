@@ -25,5 +25,10 @@ public class EndlessScore : MonoBehaviour {
         score = ((int)Time.time) + player.GetComponent<CoinSystem>().getCoinScore();
         scoreText.text = "Score: " + score;
     }
-    
+
+    public int GetScore()
+    {
+        return score;
+    }
+
 }
