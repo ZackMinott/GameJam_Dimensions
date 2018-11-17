@@ -21,7 +21,6 @@ public class CoinSystem : MonoBehaviour {
         if (col.gameObject.tag == "Coin")
         {
             coins++;
-            //countText.text = "Coins:" + coins;
             SetCountText();
         }
 
@@ -31,7 +30,7 @@ public class CoinSystem : MonoBehaviour {
 
     void SetCountText()
     {
-        countText.text = "Coins: " + coins;
+        countText.text = "Gems: " + coins;
     }
 
     

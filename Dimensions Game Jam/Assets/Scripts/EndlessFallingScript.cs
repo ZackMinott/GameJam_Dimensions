@@ -16,7 +16,7 @@ public class EndlessFallingScript : MonoBehaviour {
 	void Update ()
     {
         transform.Translate(new Vector3(0, -1 * background.GetComponent<BackdropScript>().speed * Time.deltaTime), Space.World);
-        if (transform.position.y <= -5.5)
+        if (transform.position.y <= -6)
         {
             Object.Destroy(transform.gameObject);
         }
