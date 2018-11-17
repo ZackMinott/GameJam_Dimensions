@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class EndlessDifficultyCalculator : MonoBehaviour {
 
-    [Range(1,5)]
+    [Range(1,3)]
     public int difficultyFactor = 1;
     float difficultyWaitTime;
     float nextDifficultyStart = 3;
     float currentDifficultyProgress = 0;
     int difficultyBenchmark = 1;
+    public AudioSource music;
 
 
 	// Use this for initialization
@@ -34,6 +35,7 @@ public class EndlessDifficultyCalculator : MonoBehaviour {
                 difficultyBenchmark++;
             }
         }
+        music.pitch = 1 + (GetDifficulty() -1)/10;
 	}
 
     public float GetDifficulty()
