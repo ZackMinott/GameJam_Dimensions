@@ -12,19 +12,22 @@ public class Player1 : MonoBehaviour {
     float velocityXSmoothing;
     float velocityYSmoothing;
 
+    [SerializeField] GameObject target;
     PlayerController controller;
+    
 
 	// Use this for initialization
 	void Start () {
         controller = GetComponent<PlayerController>();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         if (controller.collisions.above || controller.collisions.below)
         {
             velocity.y = 0;
         }
+
 
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
@@ -35,4 +38,6 @@ public class Player1 : MonoBehaviour {
 
         controller.Move(velocity * Time.deltaTime);
     }
+
+    
 }
