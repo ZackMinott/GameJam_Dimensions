@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CoinSystem : MonoBehaviour {
    
-    public int coins = 0;
+    public static int coins = 0;
     public Text countText;
 
     void Start()
@@ -33,4 +33,6 @@ public class CoinSystem : MonoBehaviour {
     {
         countText.text = "Coins: " + coins;
     }
+
+    
 }

@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114192041446361626}
   - component: {fileID: 95480031476305382}
   - component: {fileID: 50525094576722338}
+  - component: {fileID: 114827406739619644}
   m_Layer: 10
   m_Name: Alien1_PH
   m_TagString: Blue
@@ -68,6 +69,7 @@ GameObject:
   - component: {fileID: 114037043842652108}
   - component: {fileID: 95226237757042762}
   - component: {fileID: 50568887703091102}
+  - component: {fileID: 114383374428673738}
   m_Layer: 9
   m_Name: Alien2_PH
   m_TagString: Red
@@ -303,6 +305,18 @@ MonoBehaviour:
   verticalRayCount: 4
   lives: 0
   invincibleWaitTime: 0
+--- !u!114 &114383374428673738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1982283760867120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095baada500d0054792f800bca93c534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countText: {fileID: 0}
 --- !u!114 &114792207139406090
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -315,6 +329,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1653778525410628}
+--- !u!114 &114827406739619644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653778525410628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095baada500d0054792f800bca93c534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countText: {fileID: 0}
 --- !u!114 &114849543074466518
 MonoBehaviour:
   m_ObjectHideFlags: 1
