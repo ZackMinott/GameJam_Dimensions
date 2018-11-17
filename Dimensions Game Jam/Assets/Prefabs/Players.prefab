@@ -244,6 +244,7 @@ MonoBehaviour:
   verticalRayCount: 4
   lives: 3
   invincibleWaitTime: 0
+  damageNoise: {fileID: 0}
 --- !u!114 &114149470827254782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -327,6 +328,7 @@ MonoBehaviour:
   verticalRayCount: 4
   lives: 3
   invincibleWaitTime: 0
+  damageNoise: {fileID: 0}
 --- !u!114 &114383374428673738
 MonoBehaviour:
   m_ObjectHideFlags: 1
