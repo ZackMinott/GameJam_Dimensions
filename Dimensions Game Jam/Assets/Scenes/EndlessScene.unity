@@ -390,7 +390,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 142950690}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45093dd1ddcf57142a55316b26a377fd, type: 3}
   m_Name: 
@@ -1723,6 +1723,7 @@ MonoBehaviour:
   BG: {fileID: 1383319164}
   PlayerOne: {fileID: 748396065}
   PlayerTwo: {fileID: 1888736788}
+  ScoreSystem: {fileID: 142950690}
 --- !u!4 &883369660
 Transform:
   m_ObjectHideFlags: 0
@@ -3748,6 +3749,7 @@ MonoBehaviour:
   coinText: {fileID: 917233442}
   finalScoreText: {fileID: 1008211133}
   backButton: {fileID: 467920553}
+  retryButton: {fileID: 0}
 --- !u!1 &1953292395
 GameObject:
   m_ObjectHideFlags: 0
