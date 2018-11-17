@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114167637841376690}
   - component: {fileID: 70355414135028534}
   - component: {fileID: 114192041446361626}
+  - component: {fileID: 95480031476305382}
   m_Layer: 0
   m_Name: Alien1_PH
   m_TagString: Blue
@@ -41,6 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4163131777921336}
+  - component: {fileID: 114929831413396162}
   m_Layer: 0
   m_Name: Players
   m_TagString: Untagged
@@ -63,6 +65,7 @@ GameObject:
   - component: {fileID: 114792207139406090}
   - component: {fileID: 70314816024206974}
   - component: {fileID: 114037043842652108}
+  - component: {fileID: 95226237757042762}
   m_Layer: 0
   m_Name: Alien2_PH
   m_TagString: Red
@@ -141,6 +144,42 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.28, y: 1.28}
   m_Direction: 0
+--- !u!95 &95226237757042762
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1982283760867120}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ffb5e7c6f941982468543deaae2f1f5f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!95 &95480031476305382
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653778525410628}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ffb5e7c6f941982468543deaae2f1f5f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114037043842652108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -203,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1dd3b9e89e16f4984cec0bc2ac3a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1982283760867120}
 --- !u!114 &114192041446361626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -233,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1dd3b9e89e16f4984cec0bc2ac3a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1653778525410628}
 --- !u!114 &114849543074466518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -267,6 +306,17 @@ MonoBehaviour:
   matchTargetGOScale: 0
   uiParticleSystem: {fileID: 0}
   CacheOnAwake: 1
+--- !u!114 &114929831413396162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1667171342650936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437647de0ea88784398022d6334dacce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198233053975501518
 ParticleSystem:
   m_ObjectHideFlags: 1
