@@ -4,23 +4,31 @@ using UnityEngine;
 
 public class SpawnerScript : MonoBehaviour {
 
-    public float asteroidSpawnWaitTime = 0.5f;
-    public float coinSpawnWaitTime = 1f;
+    public float asteroidSpawnBaseTime = 3f;
+    public float coinSpawnBaseTime = 4f;
+
+    float asteroidSpawnWaitTime;
+    float coinSpawnWaitTime;
     float nextAsteroidSpawnTime;
     float nextCoinSpawnTime;
+    float speedFactor;
 
     public GameObject redAsteroid1;
     public GameObject redAsteroid2;
     public GameObject blueAsteroid1;
     public GameObject blueAsteroid2;
     public GameObject coin;
-    public GameObject background;
 
-	// Use this for initialization
 	
 	// Update is called once per frame
 	void Update ()
     {
+        speedFactor = GameObject.Find("Main Camera").GetComponent<EndlessDifficultyCalculator>().GetDifficulty();
+
+
+        asteroidSpawnWaitTime = asteroidSpawnBaseTime / speedFactor;
+        coinSpawnWaitTime = coinSpawnBaseTime / speedFactor;
+
         if (Time.time >= nextAsteroidSpawnTime)
         {
             bool selectRed = Random.Range(0f, 1f) < 1f/2;

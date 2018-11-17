@@ -40,5 +40,10 @@ public class CoinSystem : MonoBehaviour {
         countText.text = "Gems: " + (coins + spentCoins);
     }
 
+    public int getCoinScore()
+    {
+        return 5 * (coins + spentCoins);
+    }
+
     
 }
