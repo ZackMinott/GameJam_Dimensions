@@ -436,6 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noise: {fileID: 0}
+  inTheMiddle: 0
 --- !u!198 &198233053975501518
 ParticleSystem:
   m_ObjectHideFlags: 1

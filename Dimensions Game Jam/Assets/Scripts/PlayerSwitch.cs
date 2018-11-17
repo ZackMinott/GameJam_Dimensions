@@ -12,7 +12,7 @@ public class PlayerSwitch : MonoBehaviour {
 
 
     public AudioSource noise;
-
+    public bool inTheMiddle = false;
 	// Use this for initialization
 	void Start () {
         player1 = GameObject.FindGameObjectWithTag("Red");
@@ -25,13 +25,19 @@ public class PlayerSwitch : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && inTheMiddle == false)
         {
             StartCoroutine("switchAnimation");
             noise.Play();
         }
 	}
-
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "LimitingWall")
+        {
+            inTheMiddle = true;
+        }
+    }
     void Switch()
     {
         
