@@ -7,8 +7,10 @@ public class SpawnerScript : MonoBehaviour {
     public float spawnWaitTime = 0.5f;
     float nextSpawnTime;
 
-    public GameObject redAsteroid;
-    public GameObject blueAsteroid;
+    public GameObject redAsteroid1;
+    public GameObject redAsteroid2;
+    public GameObject blueAsteroid1;
+    public GameObject blueAsteroid2;
     public GameObject background;
 
 	// Use this for initialization
@@ -23,14 +25,29 @@ public class SpawnerScript : MonoBehaviour {
         if (Time.time >= nextSpawnTime)
         {
             bool selectRed = Random.Range(0f, 1f) < 1f/2;
+            bool selectOne = Random.Range(0f, 1f) < 1f / 2;
             if (selectRed)
             {
-                Instantiate(redAsteroid, new Vector3(Random.Range(-(transform.position.x), transform.position.x) + transform.position.x, transform.position.y), new Quaternion(transform.rotation.x, transform.rotation.y, Random.rotation.z, transform.rotation.w));
-
+                if (selectOne)
+                {
+                    Instantiate(redAsteroid1, new Vector3(Random.Range(-(transform.position.x), transform.position.x) + transform.position.x, transform.position.y), new Quaternion(transform.rotation.x, transform.rotation.y, Random.rotation.z, transform.rotation.w));
+                }
+                else if (!selectOne)
+                {
+                    Instantiate(redAsteroid2, new Vector3(Random.Range(-(transform.position.x), transform.position.x) + transform.position.x, transform.position.y), new Quaternion(transform.rotation.x, transform.rotation.y, Random.rotation.z, transform.rotation.w));
+                }
             }
             else if (!selectRed)
             {
-                Instantiate(blueAsteroid, new Vector3(Random.Range(-(transform.position.x), transform.position.x) + transform.position.x, transform.position.y), new Quaternion(transform.rotation.x, transform.rotation.y, Random.rotation.z, transform.rotation.w));
+                if (selectOne)
+                {
+                    Instantiate(blueAsteroid1, new Vector3(Random.Range(-(transform.position.x), transform.position.x) + transform.position.x, transform.position.y), new Quaternion(transform.rotation.x, transform.rotation.y, Random.rotation.z, transform.rotation.w));
+                }
+                else if (!selectOne)
+                {
+                    Instantiate(blueAsteroid2, new Vector3(Random.Range(-(transform.position.x), transform.position.x) + transform.position.x, transform.position.y), new Quaternion(transform.rotation.x, transform.rotation.y, Random.rotation.z, transform.rotation.w));
+                }
+                
             }
             nextSpawnTime = Time.time + spawnWaitTime;
         }
