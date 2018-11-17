@@ -35,7 +35,7 @@ public class CoinSystem : MonoBehaviour {
 
     }
 
-    void SetCountText()
+    public void SetCountText()
     {
         countText.text = "Gems: " + (coins + spentCoins);
     }
