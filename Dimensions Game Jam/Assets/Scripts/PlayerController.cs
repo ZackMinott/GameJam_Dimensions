@@ -28,6 +28,11 @@ public class PlayerController : MonoBehaviour {
         CalculateRaySpacing();
     }
 
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        HitObstacle(collision.gameObject);
+    }
+
     public void Move(Vector3 velocity)
     {
         UpdateRaycastOrigins();
