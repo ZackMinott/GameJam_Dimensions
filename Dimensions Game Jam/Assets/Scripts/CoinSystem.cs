@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CoinSystem : MonoBehaviour {
    
     public static int coins = 0;
+    static int spentCoins = 0;
     public Text countText;
 
     void Start()
@@ -23,14 +24,20 @@ public class CoinSystem : MonoBehaviour {
             coins++;
             SetCountText();
         }
-
+        if (coins >= 100)
+        {
+            transform.gameObject.GetComponent<PlayerController>().lives++;
+            coins -= 100;
+            spentCoins += 100;
+            Debug.Log(transform.gameObject.name + " gained life");
+        }
         Destroy(col.gameObject);
 
     }
 
     void SetCountText()
     {
-        countText.text = "Gems: " + coins;
+        countText.text = "Gems: " + (coins + spentCoins);
     }
 
     
