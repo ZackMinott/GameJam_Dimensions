@@ -7,7 +7,7 @@ public class EndlessDifficultyCalculator : MonoBehaviour {
     [Range(1,5)]
     public int difficultyFactor = 1;
     float difficultyWaitTime;
-    float nextDifficultyStart;
+    float nextDifficultyStart = 3;
     float currentDifficultyProgress = 0;
     int difficultyBenchmark = 1;
 
