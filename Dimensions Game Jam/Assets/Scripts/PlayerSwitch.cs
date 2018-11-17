@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerSwitch : MonoBehaviour {
     GameObject player1;
@@ -8,6 +9,8 @@ public class PlayerSwitch : MonoBehaviour {
 
     Animator switching1;
     Animator switching2;
+
+    public AudioSource noise;
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +26,7 @@ public class PlayerSwitch : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine("switchAnimation");
+            noise.Play();
         }
 	}
 
